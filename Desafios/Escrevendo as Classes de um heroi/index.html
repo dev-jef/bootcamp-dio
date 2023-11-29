@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escrevendo as Classes de um Heroi</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="infoHero">
+            <h1>Crie seu Heroi</h1>
+
+            <div class="dados">
+                <label for="txtNome">Nome</label>
+                <input type="text" name="txtNome" id="txtNome" placeholder="Digite o nome do seu heroi...">
+
+                <label for="txtIdade">Idade</label>
+                <input type="text" name="txtIdade" id="txtNome" placeholder="Digite a idade do seu heroi...">
+
+                <label for="cbClasse">Classe</label>
+                <select name="cbClasse" id="cbClasse"  onchange="slcTipoAterarImagem()" aria-placeholder="Escolha a Classe">
+                    <option value="guerreiro">Guerreiro</option>
+                    <option value="mago">Mago</option>
+                    <option value="ninja">Ninja</option>
+                    <option value="monge">Monge</option>
+                    <option value="ladrao">Ladrão</option>
+                </select>
+            </div>
+
+            <div class="habilidades">
+                <div class="visualHeroi">
+                    
+                    <img class="imgDoHeroi" src="/src/img/guerreiro.png" alt="">
+                    <h2 class="informacoes">asd</h2>
+                </div>
+                
+                <div class="habilidades-botoes">
+                        <h2 class="informacaoes"></h2>
+                        <h2> Confira suas habilidade</h2>
+                        <div class="botoes">
+                            <button class="atacar" onclick="btnAtacar()">Atacar</button>
+                            <button class="defender" onclick="btnDefender()">Defender</button>
+                            <button class="Especial" onclick="btnEspecial()">Especial</button>
+                        </div>
+                        <h2 class="mensagem">Atacar</h2>
+                    </div>
+                    
+                    
+                        
+                </div>
+                
+            </div>
+            
+        </div>
+            
+
+            
+        
+         
+    </div>
+
+    <script src="/src/script.js"></script>
+</body>
+</html>
